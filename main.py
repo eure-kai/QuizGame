@@ -17,7 +17,7 @@ SM_check = False
 
 
 
-print("\nWelcome to the Academic Quiz Game!")                                                                 
+print("Welcome to the Academic Quiz Game!")                                                                 
 
 print("\n\n")
 
