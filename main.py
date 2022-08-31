@@ -15,9 +15,7 @@ SM_points = 0
 SM_check = False
 
 
-
-
-print("Welcome to the Academic Quiz Game!")                                                                 
+print("Welcome to the Academic Quiz Game!")
 
 print("\n\n")
 
@@ -67,8 +65,8 @@ def rules(Geo_points, Geo_check, Geo_Questions, History_points, History_check, H
 	print("\nFinally, please DO NOT press any keys for no reason. Otherwise the game may crash.")
 	time.sleep(1)
 	after_rules(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
-  
- 
+
+
 def Leave(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions):
 	choice = input(f"\n\nAre you sure you want to quit the game? y/n ")
 	
@@ -91,7 +89,7 @@ def after_rules(Geo_points, Geo_check, Geo_Questions, History_points, History_ch
 	elif choice.lower() == 'n':
   		Leave(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
   		after_rules(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
-  		
+		
 	else:
 		print("\nPlease pick a valid option.")
 		after_rules(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
@@ -127,7 +125,7 @@ def options(Geo_points, Geo_check, Geo_Questions, History_points, History_check,
 
 
 def Switch(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions):
-  
+
 	if Geo_check and History_check and SM_check:
 		conclusion(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
 		
@@ -222,7 +220,7 @@ def Geo_Intro(Geo_points, Geo_check, Geo_Questions, History_points, History_chec
 		Leave(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
 		Geo_Intro(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
 
-  		
+		
 	else:
 		print("\nPlease pick a valid option.")
 		Geo_Intro(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
@@ -326,7 +324,7 @@ def History_Intro(Geo_points, Geo_check, Geo_Questions, History_points, History_
 		Leave(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
 		History_Intro(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
 
-  		
+
 	else:
 		print("\nPlease pick a valid option.")
 		History_Intro(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
@@ -479,8 +477,7 @@ def SM_Main(Geo_points, Geo_check, Geo_Questions, History_points, History_check,
 		
 		if Wrong_Questions >= 3:
 			print("\n\nUh oh! You answered 3 questions wrong, so you must start again. Sending you back to question 1...")
-			time.sleep(2)
-		SM_Main(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
+			SM_Main(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
 			
 	time.sleep(1)
 	print("\n\nCongratulations, you have made it through the round WITHOUT incorrectly answering 3 questions!")
@@ -533,26 +530,6 @@ def conclusion(Geo_points, Geo_check, Geo_Questions, History_points, History_che
 	time.sleep(3)
 	print("\nThank you for playing the game. If you want to play the game again, click the \"Run again\" button that will pop up in a few seconds.")
 	time.sleep(3)
-	
-	print('''\n\n
-
-   ___                   ___              
-  / __|__ _ _ __  ___   / _ \__ _____ _ _ 
- | (_ / _` | '  \/ -_) | (_) \ V / -_) '_|
-  \___\__,_|_|_|_\___|  \___/ \_/\___|_|  
-
-	''')
 
 
 choice_rules(Geo_points, Geo_check, Geo_Questions, History_points, History_check, History_Questions, SM_points, SM_check, Science_Questions)
-
-
-
-	
-
-
-
-
-
-
-
