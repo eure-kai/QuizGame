@@ -1,4 +1,3 @@
-
 def Geo_Questions():
 	
 	One = {
@@ -1514,4 +1513,3 @@ def Science_Questions():
 	
 	Questions = [One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve, Thirteen, Fourteen, Fifteen, Sixteen, Seventeen, Eighteen, Nineteen, Twenty, Twentyone, Twentytwo, Twentythree, Twentyfour, Twentyfive, Twentysix, Twentyseven, Twentyeight, Twentynine, Thirty, Thirtyone, Thirtytwo, Thirtythree, Thirtyfour, Thirtyfive, Thirtysix]
 	return Questions
-	
